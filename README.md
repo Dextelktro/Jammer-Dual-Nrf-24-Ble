@@ -1,99 +1,26 @@
-# Jammer-Dual-Nrf-24-Ble
-Projek jammer ble/wifi 2,4 GHz by Dextelektro
+## 2.4 GHz BLE/Wi-Fi Jammer A 2.4 GHz 
 
-Tiktok = Dextelektro
+BLE/Wi-Fi jammer project by Dextelektro How the code works When the ESP32 is powered on and the program begins executing, the blue indicator light on the ESP32 turns on to signal that the program is running. The 0.96-inch LCD screen displays "HSPI" and "VSPI" to indicate that these interfaces are active; the device then continuously emits random frame signals designed to disrupt signals operating in the 2.4 GHz frequency range. 
 
-Github = Dextelektro
+## About the code and device
 
-Shopee = storediyprojek
+Signal strength and frame transmission speed are adjustable. Please note that this code is intended for prototyping; for maximum performance and power, you can modify and update the code using platforms such as Arduino IDE, ESP-IDF, or PlatformIO (via VS Code or other applications). 
 
-Follow me because it will make me more enthusiastic and motivated
+## Disclaimer Please use this code responsibly. 
 
-Jammer dual NRF24 BY Dextelektro
+*The use of such code and devices is strictly prohibited in many countries due to laws regarding signal jammers. I accept no liability for any illegal use of this device or code.*
 
-Saat esp32 menyala dan progam berjalan maka lampu biru pada esp32 akan menyala menandakan bahwa progam sudah berjalan
-dan layar oled 0.96 akan menyala menandakan bahwa HSPI dan VSPI sudah berjalan dan akan mengeluarkan sinyal radio/sinyaal jammer yang akan mengacaukan perangkat yang menggunakan sinyal 2,4Ghz
-
-In English
-
-2.4 GHz BLE/WiFi jammer project  
-When the ESP32 is powered on and the program runs, the blue light on the ESP32 will turn on, indicating that the program is running,  
-and the 0.96 OLED screen will light up, indicating that HSPI and VSPI are running and will emit radio/jammer signals that will interfere with devices using 2.4GHz signals.
-
-## komponen/component
-
-- Esp32 Dev modul
-- oled display 0.96
-- two NRF24 PA/LNA
-- battery
+## Components
+- ESP32 Dev Module
+- 0.96" OLED display
+- Two NRF24 PA/LNA modules
+- Battery
 - TP4056
 - WS2812
 
-## Wiring 
+## Wiring
+HSPI SCK 14 MISO 12 MOSI 13 CS 15 CE 26 VCC 3.3V GND GND VSPI SCK 18 MISO 19 MOSI 23 CS 15 CE 4 VCC 3.3V GND GND OLED 0.96" SDA 21 SCL 22 VCC 5V GND GND WS2812 DI 5 VCC 5V GND GND
 
-HSPI
+## How to upload the program Download or copy the program, then open it in the Arduino IDE. Select the "ESP32 Dev Module" board and upload the file/program. Download the following libraries: - RF24 - EZButton - Adafruit NeoPixel Set the upload speed to 115200, select the ESP32 Dev Module port (e.g., COM5), and upload the program.
 
-SCK   14 
-
-MISO  12
-
-MOSI  13
-
-CS    15 
-
-CE    26
-
-VCC   3.3V
-
-GND   GND
-
- 
-VSPI 
-
-SCK   18 
-
-MISO  19
-
-MOSI  23
-
-CS    15
-
-CE    4
-
-VCC   3.3V
-
-GND   GND
-
-OLED 0.96
-SDA   21
-SCL   22
-VCC   5V
-GND   GND
-
-WS2812
-DI    5
-VCC   5V
-GND   GND
-
-## Cara uploud/How to upload
-Unduh Progam/salin link lalu buka di arduino ide 3.9, Pilih board esp32 dev modul, Uploud file 
-unduh libary 
-RF24
-EZbutton
-Adafruitneopixel
-Kecepatan unduh 115200, Lalu masukan port esp32 dev modul contoh (com5) dan unduh progam
-
-In Engish
-Download the program/copy the link and then open it in Arduino IDE 3.9, select the ESP32 Dev Module board, upload the file.  
-Download the libraries:  
-RF24  
-EZButton  
-Adafruit NeoPixel  
-Download speed 115200, then enter the ESP32 Dev Module port, for example (COM5), and upload the program.
-
-## Disklaimer
-Alat jammer ini bertujuan untuk memberikan gambaran dan referensi serta tujuan pembelajaran. Kami tidak bertanggung atas penggunaan secara ilegal. Segala tindakan yang diambil berdasarkan informasi ini menjadi tanggung jawab masing-masing pengguna.
-
-In english
-This jammer device is intended to provide an overview, reference, and learning objectives. We are not responsible for illegal use. Any actions taken based on this information are the responsibility of each individual user.
-
+Follow my TikTok account: Dextelektro
